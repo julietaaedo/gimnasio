@@ -1,0 +1,74 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100px; /* Tamaño reducido del logo */
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px; /* Agrega margen inferior para separar el footer */
+}
+
+.day {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.day:hover {
+    background-color: #F5F5DC; /* Color hueso */
+}
+
+.day h2, .day h3 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.day h2:hover, .day h3:hover {
+    color: #8B4513; /* Color natural */
+}
+
+.day ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.day li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to top, fuchsia, pink);
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+}
